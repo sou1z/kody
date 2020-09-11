@@ -1,2 +1,2 @@
 # kody
-Nauka programowania
+Nauka programowania w Pythonie oraz C++ 2020/21
