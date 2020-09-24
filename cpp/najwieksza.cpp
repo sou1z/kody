@@ -23,6 +23,7 @@ float liczba1, liczba2, liczba3;
     if(liczba1 > liczba2 && liczba1 > liczba3) cout << liczba1;
     if(liczba2 > liczba1 && liczba2 > liczba3) cout << liczba2;
     if(liczba3 > liczba1 && liczba3 > liczba2) cout << liczba3;
+	
   
 
 
