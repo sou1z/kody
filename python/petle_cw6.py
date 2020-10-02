@@ -8,6 +8,18 @@
 
 
 def main(args):
+    liczba = 1
+    while liczba != 0:
+        liczba = int(input("Podaj liczbę: "))
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return 0
 
 if __name__ == '__main__':
