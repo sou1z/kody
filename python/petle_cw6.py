@@ -9,15 +9,19 @@
 
 def main(args):
 	liczba = 1
-	suma = liczba + liczba
-	while liczba != 0:
+	suma=liczba+liczba
+	
+	while liczba > 0:
 		liczba = int(input("Podaj liczbę: "))
-        
+		suma = suma + liczba
+    
+    
+    
+
 	
 	
 	if liczba == 0:
 		print(suma)
-    
     
     
     
