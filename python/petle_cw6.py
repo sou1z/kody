@@ -8,9 +8,15 @@
 
 
 def main(args):
-    liczba = 1
-    while liczba != 0:
-        liczba = int(input("Podaj liczbę: "))
+	liczba = 1
+	suma = liczba + liczba
+	while liczba != 0:
+		liczba = int(input("Podaj liczbę: "))
+        
+	
+	
+	if liczba == 0:
+		print(suma)
     
     
     
@@ -20,7 +26,7 @@ def main(args):
     
     
     
-    return 0
+	return 0
 
 if __name__ == '__main__':
     import sys
