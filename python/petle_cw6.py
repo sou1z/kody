@@ -15,20 +15,8 @@ def main(args):
 		liczba = int(input("Podaj liczbę: "))
 		suma = suma + liczba
     
-    
-    
-
-	
-	
 	if liczba == 0:
-		print(suma)
-    
-    
-    
-    
-    
-    
-    
+			print(suma)
     
 	return 0
 
