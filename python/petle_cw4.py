@@ -30,7 +30,7 @@ def main(args):
 	liczba = 0
 	
 	for liczba in range(m, n):
-		if liczba >= 10:
+		if liczba >= 10 and liczba <=100:
 			if liczba % 2 == 0:  
 				if liczba % 3 == 0:  
 					print(liczba)
