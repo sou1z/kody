@@ -27,43 +27,47 @@
 
 using namespace std;
 
-void pobierzliczby1(int t1[]) {
-	int liczba1 = 0;
-	for (int i = 0; i<5; i++){
-		cout << "Podaj liczbe: ";
-		cin >> liczba1;
-		t1[i] = liczba1;
-	}
-	
+void pobierzliczby(int t[]) {
+    int liczba1 = 0;
+    for (int i = 0; i<5; i++){
+        cout << "Podaj liczbe: ";
+        cin >> liczba1;
+        t[i] = liczba1;
+    }
 }
-void pobierzliczby2(int t1[], int t2[]) {
-	int liczba2 = 0;
-	for (int i = 0; i<5; i++){
-		cout << "Podaj liczbe: ";
-		cin >> liczba2;
-		t2[i] = liczba2;
 
-}
-}
-float suma(int t1[], int t2[]){
-	float suma1 = 0;
-	float suma2 = 0;
-	for (int i = 0; i<5; i++){
-	suma1+= t1[i];
-	
-	suma2+=t2[i];
-		
-}
-	return suma1, suma2;
+int suma(int t[]){
+    float suma = 0;
+    for (int i = 0; i<5; i++){
+        suma+= t[i];      
+    }
+    return suma;
 }
 
 int main(int argc, char **argv)
 {
-	int liczba1=5;
-	int liczba2=5;
-	int t1[liczba1];
-	int t2[liczba2];
-	cout << "Srednia pierwszej tablicy to " << suma1 << endl;
-
+	int i = 5;
+    int t1[i];
+    int t2[i];
+    int suma1;
+    int suma2;
+    pobierzliczby(t1);
+    cout << "Teraz seria druga liczb!" << endl;
+    pobierzliczby(t2);
+    suma1 = suma(t1);
+    suma2 = suma(t2);
+    cout << "Suma 1 wynosi: " << suma1 << endl;
+    cout << "Suma 2 wynosi: " << suma2 << endl;
+    for (int i = 0; i<5; i++){
+		cout <<  t1[i] << endl;
+	}
+	for (int i = 0; i<5; i++){
+		cout << t2[i] << endl;
+	}
+	if(suma1>suma2)
+		cout << "Suma 1 jest wieksza od sumy 2" << endl;
+	else
+		cout << "Suma 2 jest wieksza od sumy 1" << endl;
+		
 }
 
