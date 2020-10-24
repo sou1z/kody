@@ -1,5 +1,5 @@
 /*
- * tablice_cw1.cpp
+ * tablice_cw2.cpp
  * 
  * Copyright 2020 Karol <Karol@DESKTOP-EDM589B>
  * 
@@ -27,50 +27,43 @@
 
 using namespace std;
 
-void pobierzoceny(int t[], int ile) {
-	int ocena = 0; //zmienna pomocnicza
-	for (int i = 0; i < ile; i++){
-		cout << "Podaj ocene: ";
-		cin >> ocena;
-		if (ocena > 0 && ocena <7)
-			t[i] = ocena;
-		else
-			i--;
+void pobierzliczby1(int t1[]) {
+	int liczba1 = 0;
+	for (int i = 0; i<5; i++){
+		cout << "Podaj liczbe: ";
+		cin >> liczba1;
+		t1[i] = liczba1;
 	}
 	
 }
+void pobierzliczby2(int t1[], int t2[]) {
+	int liczba2 = 0;
+	for (int i = 0; i<5; i++){
+		cout << "Podaj liczbe: ";
+		cin >> liczba2;
+		t2[i] = liczba2;
 
-float obliczSrednia(int t[], int ile){
-	float suma = 0;
-	for (int i = 0; i< ile; i++){
-	suma += t[i];
-	}
-	return suma/ile;
-}
-
-
-void drukuj(int t[], int ile){
-	for (int i = 0; i< ile; i++){
-		cout << "Indeks: " << i << " Wartosc: " << t[i] << endl;
 }
 }
-
-
-
+float suma(int t1[], int t2[]){
+	float suma1 = 0;
+	float suma2 = 0;
+	for (int i = 0; i<5; i++){
+	suma1+= t1[i];
+	
+	suma2+=t2[i];
+		
+}
+	return suma1, suma2;
+}
 
 int main(int argc, char **argv)
 {
-	int ile = 0;
-	cout << "Ile podasz ocen? ";
-	cin >> ile;
-	
-	int oceny[ile];
-	
-	pobierzoceny(oceny, ile);
-	drukuj(oceny, ile);
-	
-	cout << "Srednia podanych ocen to " << obliczSrednia(oceny, ile) << endl;
-	
-	return 0;
+	int liczba1=5;
+	int liczba2=5;
+	int t1[liczba1];
+	int t2[liczba2];
+	cout << "Srednia pierwszej tablicy to " << suma1 << endl;
+
 }
 
